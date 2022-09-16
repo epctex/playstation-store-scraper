@@ -18,7 +18,7 @@ The Playstation Store data scraper supports the following features:
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/playstation-store-scraper/issues).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/playstation-store-scraper/issues).
 
 ## Input Parameters
 
@@ -93,12 +93,10 @@ The structure of each item in Playstation Store looks like this:
 {
   "url": "https://store.playstation.com/en-tr/product/EP9000-BCES00850_00-LBPDLCORIGCO0083",
   "id": "EP9000-BCES00850_00-LBPDLCORIGCO0083",
-  "__typename": "Product",
   "privacyPolicy": null,
   "publisherName": "Sony Interactive Entertainment Europe",
   "descriptions": [
     {
-      "__typename": "Description",
       "type": "LONG",
       "subType": "NONE",
       "value": "Game For Anything<br>Turn your Sackboy® into a creative genius with this Game Writer costume, complete with a fashion-statement moustache and ironic T-shirt.<br><br>Sackboy® Says:<br>• This costume is also available to download from PlayStation®Store in the Sackboy's Casual Friday Costume Pack.<br><br>This add-on is for LittleBigPlanet™ 2.<br><br>Buy this add-on for LBP™ 2 and get the LittleBigPlanet™ Karting, LittleBigPlanet™ PlayStation®Vita and LittleBigPlanet™ 3 (PS4™ and PS3™) versions at NO EXTRA COST.<br><br>After purchase, open the PlayStation®Store “Download List” to find this add-on ready to be downloaded.<br><br>1-4 Players, 1300MB minimum space required, HDTV screen resolution: 720p, Network Features, Network Players 2-4, PlayStation®Move Optional<br><br>Download of this product is subject to the Sony Entertainment Network Terms of Service/User Agreement and any specific additional conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more important information.<br> PS4: One-time licence fee to download to multiple PS4 systems. Sign in to PSN is not required to use this on your primary PS4, but is required for use on other PS4 systems.<br>PS3: One-time fee for use of downloads on up to 2 activated PS3 systems.<br>PS Vita: One-time fee for use of downloads on up to 3 activated compatible Portable Console systems.<br>See Health Warnings for important health information before using this product.<br>Library programs ©Sony Computer Entertainment Inc. exclusively licensed to Sony Computer Entertainment Europe. Software Usage Terms apply, See eu.playstation.com/legal for full usage rights.<br><br>LittleBigPlanet™ 2 ©2010 Sony Computer Entertainment Europe. Published by Sony Computer Entertainment Europe. Developed by Media Molecule. “LittleBigPlanet”, “LittleBigPlanet logo”, “Sackboy” and “Sackgirl” are trademarks or registered trademarks of Sony Computer Entertainment Europe. All rights reserved."
@@ -112,7 +110,6 @@ The structure of each item in Playstation Store looks like this:
     "PS4"
   ],
   "contentRating": {
-    "__typename": "ProductContentRating",
     "authority": "PEGI",
     "description": "PEGI 7+",
     "name": "PEGI_7",
@@ -120,19 +117,16 @@ The structure of each item in Playstation Store looks like this:
     "interactiveElements": [],
     "descriptors": [
       {
-        "__typename": "ProductContentRatingDescriptor",
         "description": "Fear",
         "name": "PEGI_FEAR",
         "url": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/fear.png"
       },
       {
-        "__typename": "ProductContentRatingDescriptor",
         "description": "Online",
         "name": "PEGI_ONLINE",
         "url": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/online.png"
       },
       {
-        "__typename": "ProductContentRatingDescriptor",
         "description": "Violence",
         "name": "PEGI_VIOLENCE",
         "url": "https://image.api.playstation.com/grc/images/descriptors/hd/pegi/violence.png"
@@ -161,7 +155,6 @@ The structure of each item in Playstation Store looks like this:
   "edition": null,
   "media": [
     {
-      "__typename": "Media",
       "type": "IMAGE",
       "role": "MASTER",
       "url": "https://image.api.playstation.com/cdn/EP9000/BCES00850_00/cbixxOGGNeGKWQpapaWWQ2HKRaSQP3NA.png"
