@@ -1,58 +1,60 @@
+[https://apify.com/epctex/playstation-store-scraper](https://apify.com/epctex/playstation-store-scraper?fpr=yhdrb)
+
 # Actor - Playstation Store Scraper
 
 ## Playstation Store scraper
 
 Since Playstation Store doesn't provide a good and free API, this actor should help you to retrieve data from it.
 
-The Playstation Store data scraper supports the following features:
+The PlayStation Store data scraper supports the following features:
 
 -   Search any keyword - You can search any keyword you would like to have and get the results
 
--   Scrape lists - Scrape any list that you'd like to get from Playstation Store
+-   Scrape lists - Scrape any list that you'd like to get from PlayStation Store
 
 -   Scrape category - You can check the categories and scrape the information of the newest updates.
 
--   Scrape concept - If you want to get concepts of a certain product, just type the url.
+-   Scrape concept - If you want to get concepts of a certain product, just type the URL.
 
--   Scrape product - Scrape a very detailed information for each of the products that you'd like to get.
+-   Scrape product - Scrape very detailed information for each of the products that you'd like to get.
 
-## Bugs, fixes, updates and changelog
+## Bugs, fixes, updates, and changelog
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/playstation-store-scraper/issues).
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Playstation Store that should be visited. Possible fields are:
+The input of this scraper should be JSON containing the list of pages on the Playstation Store that should be visited. Possible fields are:
 
-- `search`: (Optional) (String) Keyword that you want to search on Playstation Store.
+- `search`: (Optional) (String) Keyword that you want to search on PlayStation Store.
 
-- `startUrls`: (Optional) (Array) List of Playstation Store URLs. You should only provide concept, search, collection, category or product detail URLs.
+- `startUrls`: (Optional) (Array) List of Playstation Store URLs. You should only provide concept, search, collection, category, or product detail URLs.
 
-- `country`: (Optional) (String) Playstation store country that you want to search on Playstation Store.
+- `country`: (Optional) (String) PlayStation store country that you want to search on PlayStation Store.
 
-- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. The default is `Infinite`. This applies to all `search` requests and `startUrls` individually.
 
 - `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
 
 - `proxy`: (Required) (Proxy Object) Proxy configuration.
 
-- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as an argument and returns an object with data.
 
-- `customMapFunction`: (Optional) (String) Function that takes each objects handle as argument and returns object with executing the function.
+- `customMapFunction`: (Optional) (String) Function that takes each object's handle as an argument and returns the object with executing the function.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
 ### Tip
 
-When you want to have a scrape over a specific listing URL, just copy and paste the link as one of the **startUrl**.
+When you want to scrape over a specific listing URL, just copy and paste the link as one of the **startUrl**.
 
 If you would like to scrape only the first page of a list then put the link for the page and have the `endPage` as 1.
 
-With the last approach that explained above you can also fetch any interval of pages. If you provide the 5th page of a list and define the `endPage` parameter as 6 then you'll have the 5th and 6th pages only.
+With the last approach that is explained above you can also fetch any interval of pages. If you provide the 5th page of a list and define the `endPage` parameter as 6 then you'll have the 5th and 6th pages only.
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape many as listings as possible. Therefore, it forefronts all listing detail requests. If actor doesn't block very often it'll scrape 100 listings in 2 minutes with ~0.07-0.09 compute units.
+The actor is optimized to run blazing fast and scrape many listings as possible. Therefore, it forefronts all listing detail requests. If the actor doesn't block very often it'll scrape 100 listings in 2 minutes with ~0.07-0.09 compute units.
 
 ### Playstation Store Scraper Input example
 
@@ -173,4 +175,4 @@ The structure of each item in Playstation Store looks like this:
 ```
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
